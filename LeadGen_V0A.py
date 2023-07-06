@@ -4,11 +4,6 @@ import csv
 app = Flask(__name__)
 
 
-@app.route('/hi')
-def hello():
-    return "Hi bro"
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
